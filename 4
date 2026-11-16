@@ -1,0 +1,21 @@
+import java.util.HashSet;
+
+public class UniqueDepartments {
+    public static void main(String[] args) {
+
+        HashSet<String> departments = new HashSet<>();
+
+        departments.add("Computer Science");
+        departments.add("Management");
+        departments.add("Commerce");
+        departments.add("Computer Science");
+        departments.add("Science");
+        departments.add("Management");
+
+        System.out.println("Unique Departments:");
+
+        for (String d : departments) {
+            System.out.println(d);
+        }
+    }
+}
