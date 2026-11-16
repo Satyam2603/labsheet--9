@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class ListComparison {
+    public static void main(String[] args) {
+
+        ArrayList<String> arrayList = new ArrayList<>();
+        LinkedList<String> linkedList = new LinkedList<>();
+
+        // Insertion
+        arrayList.add("Java");
+        arrayList.add("Python");
+        arrayList.add("C++");
+
+        linkedList.add("Java");
+        linkedList.add("Python");
+        linkedList.add("C++");
+
+        System.out.println("ArrayList: " + arrayList);
+        System.out.println("LinkedList: " + linkedList);
+
+        // Insertion at index
+        arrayList.add(1, "HTML");
+        linkedList.add(1, "HTML");
+
+        System.out.println("After Insertion:");
+        System.out.println(arrayList);
+        System.out.println(linkedList);
+
+        // Deletion
+        arrayList.remove("Python");
+        linkedList.remove("Python");
+
+        System.out.println("After Deletion:");
+        System.out.println(arrayList);
+        System.out.println(linkedList);
+
+        // Get element
+        System.out.println("ArrayList get: " + arrayList.get(1));
+        System.out.println("LinkedList get: " + linkedList.get(1));
+
+        // Size
+        System.out.println("ArrayList Size: " + arrayList.size());
+        System.out.println("LinkedList Size: " + linkedList.size());
+
+        // Iteration
+        System.out.println("ArrayList Iteration:");
+
+        for (String s : arrayList) {
+            System.out.println(s);
+        }
+
+        System.out.println("LinkedList Iteration:");
+
+        for (String s : linkedList) {
+            System.out.println(s);
+        }
+    }
+}
