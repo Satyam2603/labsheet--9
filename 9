@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class ListIteratorExample {
+    public static void main(String[] args) {
+
+        ArrayList<String> students = new ArrayList<>();
+
+        students.add("Aman");
+        students.add("Rahul");
+        students.add("Priya");
+        students.add("Neha");
+
+        ListIterator<String> itr = students.listIterator();
+
+        while (itr.hasNext()) {
+            String name = itr.next();
+
+            if (name.equals("Rahul")) {
+                itr.set("Satyam");
+            }
+
+            if (name.equals("Priya")) {
+                itr.add("Rohit");
+            }
+        }
+
+        System.out.println("Updated List: " + students);
+    }
+}
