@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class HospitalPatient {
+    public static void main(String[] args) {
+
+        ArrayList<String> patients = new ArrayList<>();
+        HashSet<String> patientIDs = new HashSet<>();
+
+        patients.add("Rahul");
+        patients.add("Aman");
+        patients.add("Priya");
+
+        patientIDs.add("P101");
+        patientIDs.add("P102");
+        patientIDs.add("P103");
+
+        System.out.println("Patient Names: " + patients);
+        System.out.println("Patient IDs: " + patientIDs);
+
+        // Remove patient
+        patients.remove("Aman");
+        patientIDs.remove("P102");
+
+        System.out.println("After Removal:");
+        System.out.println(patients);
+        System.out.println(patientIDs);
+
+        // Search patient
+        if (patients.contains("Rahul")) {
+            System.out.println("Patient Rahul Found");
+        } else {
+            System.out.println("Patient Not Found");
+        }
+
+        // Display records
+        System.out.println("Final Patient Records:");
+
+        for (String name : patients) {
+            System.out.println(name);
+        }
+    }
+}
