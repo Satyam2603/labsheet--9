@@ -1,0 +1,21 @@
+import java.util.LinkedList;
+
+public class StudentQueue {
+    public static void main(String[] args) {
+
+        LinkedList<String> students = new LinkedList<>();
+
+        students.addFirst("Aman");
+        students.addLast("Rahul");
+        students.addLast("Priya");
+        students.addFirst("Satyam");
+
+        System.out.println("Student Queue: " + students);
+
+        students.removeFirst();
+        System.out.println("After removeFirst: " + students);
+
+        students.removeLast();
+        System.out.println("After removeLast: " + students);
+    }
+}
